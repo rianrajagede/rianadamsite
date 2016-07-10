@@ -1,0 +1,96 @@
+img.bg {
+  width: 100%;
+  height: auto;
+
+  min-height: 100%;
+  min-width: 1024px;
+	
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  img.bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+.fadein img {
+	transition:opacity 1s;
+	opacity:1;
+}
+.fadein img.is-hidden { 
+	opacity:0;
+}
+
+.mainFocus{
+  margin: 8% auto 3% auto;
+  padding: 20px;
+  width: 50%;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+}
+
+.mainFocus h1{
+	font-size: 8vw;
+	color: white;
+	margin:0;
+}
+
+.mainFocus p{
+	margin:0;
+}
+
+.profileSet{
+	display: inline-block;
+	position:relative;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top : 45px;
+	
+}
+
+.profileSet br{
+	  display:none;
+  }
+
+#rian{
+	width: 150px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 20px;
+}
+
+#icon{
+	width: 50px;
+	margin-right : 5px;
+	margin-left : 5px;
+	margin-top : 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainFocus{
+      margin: 15% auto auto auto;
+      width:90%;
+  }
+  .mainFocus h1{
+	font-size: 15vw;
+  }
+  .profileSet br{
+	  display:block;
+  }
+  #rian{
+	width: 160px;
+  }
+  #icon{
+	width:45px;
+	margin-right : 3px;
+	margin-left : 3px;
+  }
+  
+}
